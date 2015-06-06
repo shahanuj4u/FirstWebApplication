@@ -1,0 +1,24 @@
+<!DOCTYPEhtml>
+<html>
+<head><metacharset="UTF-8">
+ <script>
+ function next(){
+ kbcForm.submit();
+ }
+ function preventBack(){
+ window.history.forward(1);
+ }
+ setTimeout('preventBack()', 0);
+ </script>
+<title>KBC NOTICE</title>
+</head>
+<body>
+ <ulstyle="color:red;font-size:2em">
+ <li>Don't Refresh any pages. It will load next question.</li>
+ <li>Back tracking has been disabled. You may not go back to previous page</li>
+ </ul>
+ <formmethod='get'name='kbcForm'action='KBC2'>
+ <buttononclick='next();'height=200%width=200%>Continue</button>
+ </form>
+</body>
+</html>
